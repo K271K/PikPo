@@ -1,0 +1,63 @@
+:root {
+    --color1: #02539A;
+    --color2: #EEA47F;
+}
+header, footer, section {
+    padding: 100px 0;
+}
+header{
+    padding: 200px 0;
+}
+header, footer {
+    background:  url(images/pattern.png), var(--color1);
+    background:  url(images/pattern.png), -moz-linear-gradient(left,  var(--color1) 0%, var(--color2) 100%);
+    background: url(images/pattern.png), -webkit-linear-gradient(left,  var(--color1) 0%,var(--color2) 100%);
+    background:  url(images/pattern.png), linear-gradient(to right,  var(--color1) 0%,var(--color2) 100%);
+    filter:  url(images/pattern.png), progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
+    background-size: contain;
+}
+.itd_play {
+    background-color: var(--color1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 30px auto;
+    transition: all;
+}
+.btn-itd {
+    display: block;
+    max-width: 200px;
+    margin: 30px auto;
+    padding: 8px 30px;
+    color: var(--bs-white); 
+    background-color: var(--color2);
+  }
+  .btn-itd:hover {
+    color: var(--bs-white);
+    background-color: var(--color1);
+  }
+.color1{
+    color: var(--color1);
+}
+.color2{
+    color: var(--color2);
+}
+.bg1{
+    background-color: var(--color1);
+}
+.bg2{
+    background-color: var(--color2);
+}
+.about{
+    background-color: #eee;
+}
+.line{
+    width: 70%;
+    height: 3px;
+    background-color: var(--color1);
+    margin: 15px auto 30px;
+}
